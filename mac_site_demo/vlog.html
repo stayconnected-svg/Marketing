@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potholes on the Road to Retirement | Intelligent Annuity Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F2B4C',
+                        'navy-light': '#1a3d66',
+                        gold: '#C9A962',
+                        'gold-light': '#e6d5a8',
+                        sage: '#2D5A3F',
+                        slate: '#4A5568',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-overlay { background: linear-gradient(135deg, rgba(15,43,76,0.92) 0%, rgba(26,61,102,0.85) 100%); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-navy text-white text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-10">
+            <div class="flex items-center gap-6">
+                <a href="tel:8666142828" class="flex items-center gap-2 hover:text-gold transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>866-614-2828</a>
+                <a href="mailto:bryan.mcinerney@lpl.com" class="hidden sm:flex items-center gap-2 hover:text-gold transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>bryan.mcinerney@lpl.com</a>
+            </div>
+            <a href="https://myaccountviewonline.com/login/" class="flex items-center gap-2 hover:text-gold transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>Client Login</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center gap-3">
+                <svg class="w-12 h-12" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="#0F2B4C"/><circle cx="22" cy="24" r="6" fill="white" opacity="0.9"/><circle cx="38" cy="24" r="6" fill="white" opacity="0.9"/><circle cx="22" cy="24" r="3" fill="#C9A962"/><circle cx="38" cy="24" r="3" fill="#C9A962"/><path d="M20 18 L30 10 L40 18" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M24 36 Q30 42 36 36" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M18 28 L14 32" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M42 28 L46 32" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+                <div><span class="text-navy font-serif text-xl font-bold leading-tight block">Intelligent Annuity</span><span class="text-slate text-sm tracking-wider">SOLUTIONS</span></div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-slate hover:text-navy font-medium transition-colors">Home</a>
+                <a href="about.html" class="text-slate hover:text-navy font-medium transition-colors">About Us</a>
+                <a href="annuity-education.html" class="text-slate hover:text-navy font-medium transition-colors">Services</a>
+                <a href="resources.html" class="text-slate hover:text-navy font-medium transition-colors">Resources</a>
+                <a href="blog.html" class="text-slate hover:text-navy font-medium transition-colors">Blog</a>
+                <a href="contact.html" class="text-slate hover:text-navy font-medium transition-colors">Contact</a>
+                <a href="contact.html" class="bg-navy hover:bg-navy-light text-white px-6 py-2.5 rounded-full font-medium transition-colors">Schedule a Call</a>
+            </div>
+            <button class="lg:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-slate hover:text-navy font-medium py-2">Home</a>
+            <a href="about.html" class="block text-slate hover:text-navy font-medium py-2">About Us</a>
+            <a href="annuity-education.html" class="block text-slate hover:text-navy font-medium py-2">Services</a>
+            <a href="resources.html" class="block text-slate hover:text-navy font-medium py-2">Resources</a>
+            <a href="blog.html" class="block text-slate hover:text-navy font-medium py-2">Blog</a>
+            <a href="contact.html" class="block text-slate hover:text-navy font-medium py-2">Contact</a>
+            <a href="contact.html" class="block bg-navy text-white text-center px-6 py-3 rounded-full font-medium mt-4">Schedule a Call</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative py-16 lg:py-20 overflow-hidden bg-navy">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-serif text-4xl sm:text-5xl text-white font-bold mb-4">Potholes on the Road to Retirement</h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Watch our latest video series covering common pitfalls and challenges in retirement planning.</p>
+        </div>
+    </section>
+
+    <!-- Video Grid -->
+    <section class="py-20 lg:py-28">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-16">
+
+                <!-- Featured Video -->
+                <div>
+                    <h2 class="font-serif text-2xl text-navy font-bold mb-6">Watch Our Latest Vlog</h2>
+                    <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/N97ePtKldc8" title="Potholes on the Road to Retirement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Market Volatility -->
+                <div>
+                    <h3 class="font-serif text-xl text-navy font-bold mb-4">Market Volatility</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/zHzKG0nOapk" title="Market Volatility" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/yMogViKh8J4" title="Market Volatility Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sequence of Returns -->
+                <div>
+                    <h3 class="font-serif text-xl text-navy font-bold mb-4">Sequence of Returns Risk 2.0</h3>
+                    <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg max-w-2xl">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Iqt2BXOXXsc" title="Sequence of Returns Risk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-xs text-gray-400 italic mt-4 max-w-2xl">Content in this material is for general information only and not intended to provide specific advice or recommendations for any individual. All investing involves risk including loss of principal. No strategy assures success or protects against loss.</p>
+                </div>
+
+                <!-- Inherited Annuity -->
+                <div>
+                    <h3 class="font-serif text-xl text-navy font-bold mb-4">What Do You Do If You Inherit an Annuity?</h3>
+                    <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg max-w-2xl">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/GjUZOMWE_9E" title="Inheriting an Annuity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-xs text-gray-400 italic mt-4 max-w-2xl">Content in this material is for general information only and not intended to provide specific advice or recommendations for any individual. Fixed and Variable annuities are suitable for long-term investing, such as retirement investing. Gains from tax-deferred investments are taxable as ordinary income upon withdrawal. Guarantees are based on the claims paying ability of the issuing company. Withdrawals made prior to age 59 &frac12; are subject to a 10% IRS penalty tax and surrender charges may apply. Variable annuities are subject to market risk and may lose value.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4"><svg class="w-10 h-10" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="white" opacity="0.1"/><circle cx="22" cy="24" r="6" fill="white" opacity="0.6"/><circle cx="38" cy="24" r="6" fill="white" opacity="0.6"/><circle cx="22" cy="24" r="3" fill="#C9A962"/><circle cx="38" cy="24" r="3" fill="#C9A962"/><path d="M20 18 L30 10 L40 18" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/></svg><span class="text-white font-serif text-lg font-bold">Intelligent Annuity Solutions</span></div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Empowering you with the knowledge and insights needed to confidently navigate your annuity decisions.</p>
+                </div>
+                <div><h4 class="text-white font-semibold mb-4">Quick Links</h4><ul class="space-y-2 text-sm"><li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li><li><a href="about.html" class="hover:text-gold transition-colors">About Us</a></li><li><a href="annuity-education.html" class="hover:text-gold transition-colors">Services</a></li><li><a href="blog.html" class="hover:text-gold transition-colors">Blog</a></li><li><a href="contact.html" class="hover:text-gold transition-colors">Contact</a></li></ul></div>
+                <div><h4 class="text-white font-semibold mb-4">Resources</h4><ul class="space-y-2 text-sm"><li><a href="resources.html" class="hover:text-gold transition-colors">Retirement Planning</a></li><li><a href="resources.html" class="hover:text-gold transition-colors">Investment Strategies</a></li><li><a href="resources.html" class="hover:text-gold transition-colors">Tax Strategies</a></li><li><a href="resources.html" class="hover:text-gold transition-colors">Estate Planning</a></li></ul></div>
+                <div><h4 class="text-white font-semibold mb-4">Connect</h4><ul class="space-y-2 text-sm"><li><a href="whitepaper.html" class="hover:text-gold transition-colors">Request Whitepaper</a></li><li><a href="vlog.html" class="hover:text-gold transition-colors">Watch Our Vlogs</a></li><li><a href="https://myaccountviewonline.com/login/" class="hover:text-gold transition-colors">Client Login</a></li><li><a href="https://brokercheck.finra.org/" class="hover:text-gold transition-colors">BrokerCheck</a></li></ul></div>
+            </div>
+            <div class="border-t border-white/10 pt-8">
+                <div class="text-xs text-gray-400 space-y-3">
+                    <p>Securities offered through LPL Financial. Member <a href="https://www.finra.org" class="underline hover:text-gold">FINRA</a> & <a href="https://www.sipc.org" class="underline hover:text-gold">SIPC</a>.</p>
+                    <p class="mt-4">&copy; 2026 Intelligent Annuity Solutions, LLC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

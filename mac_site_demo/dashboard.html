@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac — Your Activity Dashboard</title>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- RB2B Visitor Identification -->
+    <script src="https://scripts.rb2b.com/YOUR_PIXEL_ID.js" async></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0b1120; }
+        .gradient-text-cyan { background: linear-gradient(135deg, #22d3ee, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow-blue { box-shadow: 0 0 40px rgba(59, 130, 246, 0.12); }
+        .glow-green { box-shadow: 0 0 30px rgba(52, 211, 153, 0.1); }
+        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.2), transparent); }
+        .pulse-dot { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .activity-row { transition: background 0.15s; }
+        .activity-row:hover { background: rgba(51, 65, 85, 0.3); }
+        .stat-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body class="text-white min-h-screen">
+
+    <!-- Header -->
+    <header class="border-b border-slate-800/80 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xs">SA</span>
+                </div>
+                <span class="text-slate-300 font-medium text-sm">Simpl ABI &mdash; Client Dashboard</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full"></span>
+                <span class="text-green-400 text-xs font-medium">Live</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Title -->
+    <section class="py-16 pb-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-4">
+                <div class="inline-block bg-cyan-500/10 border border-cyan-500/30 rounded-full px-5 py-2 mb-8">
+                    <span class="text-cyan-400 text-sm font-medium">YOUR PRIVATE DASHBOARD — FULL TRANSPARENCY</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-5 leading-tight">
+                    Everything we do.<br>
+                    <span class="gradient-text-cyan">Tracked. Visible. Yours.</span>
+                </h1>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    This is your live dashboard. Every email sent, every reply received, every meeting booked — logged automatically and visible to you at all times.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Stats Overview -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center gap-2 mb-6">
+                <p class="text-slate-400 text-sm font-medium uppercase tracking-wider">This Week's Activity</p>
+                <span class="text-slate-600 text-sm">&mdash; May 12–18, 2026</span>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="stat-card bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Emails Sent</p>
+                    <p class="text-3xl font-bold text-white">47</p>
+                    <p class="text-emerald-400 text-xs mt-1">&#9650; on pace for 200/mo</p>
+                </div>
+                <div class="stat-card bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Replies Received</p>
+                    <p class="text-3xl font-bold text-white">4</p>
+                    <p class="text-emerald-400 text-xs mt-1">&#9650; 2 positive this week</p>
+                </div>
+                <div class="stat-card bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Open Rate</p>
+                    <p class="text-3xl font-bold text-white">62%</p>
+                    <p class="text-emerald-400 text-xs mt-1">&#9650; above 50% benchmark</p>
+                </div>
+                <div class="stat-card bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Meetings Booked</p>
+                    <p class="text-3xl font-bold text-white">2</p>
+                    <p class="text-emerald-400 text-xs mt-1">&#9650; Dr. Patel, J. Rivera (DDS)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Totals -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center gap-2 mb-6">
+                <p class="text-slate-400 text-sm font-medium uppercase tracking-wider">May 2026 — Month to Date</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-4 text-center">
+                    <p class="text-2xl font-bold text-blue-400">156</p>
+                    <p class="text-slate-500 text-xs mt-1">Emails Sent</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-4 text-center">
+                    <p class="text-2xl font-bold text-cyan-400">14</p>
+                    <p class="text-slate-500 text-xs mt-1">Replies</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-4 text-center">
+                    <p class="text-2xl font-bold text-emerald-400">6</p>
+                    <p class="text-slate-500 text-xs mt-1">Positive Replies</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-4 text-center">
+                    <p class="text-2xl font-bold text-sky-400">62%</p>
+                    <p class="text-slate-500 text-xs mt-1">Open Rate</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-4 text-center">
+                    <p class="text-2xl font-bold text-amber-400">7</p>
+                    <p class="text-slate-500 text-xs mt-1">Meetings Booked</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto my-8"></div>
+
+    <!-- Activity Feed -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-6">
+                <p class="text-slate-400 text-sm font-medium uppercase tracking-wider">Recent Activity Log</p>
+                <span class="text-slate-600 text-xs">Auto-updated from sending system</span>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl overflow-hidden">
+                <div class="divide-y divide-slate-700/30 text-sm">
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Today 9:14a</span>
+                        <span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Email sent</strong> — Dr. Sarah Chen (DDS, Akron) — Sequence 1, Email 3 of 5</span>
+                        <span class="text-slate-600 text-xs">Dentist</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Today 9:02a</span>
+                        <span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Email sent</strong> — Mark Daniels (Attorney, Cleveland) — Sequence 2, Email 1 of 5</span>
+                        <span class="text-slate-600 text-xs">Attorney</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Today 8:51a</span>
+                        <span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Email sent</strong> — James Whitfield (Orthopedic Practice, Stow) — Sequence 1, Email 2 of 5</span>
+                        <span class="text-slate-600 text-xs">Physician</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Today 8:30a</span>
+                        <span class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Email opened</strong> — Rachel Torres (DDS, Medina) — opened Email 4 of 5</span>
+                        <span class="text-slate-600 text-xs">Dentist</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Yesterday</span>
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Positive reply</strong> — Dr. Raj Patel (Cardiology, Akron) — "Yes, I'd be interested in a conversation"</span>
+                        <span class="text-slate-600 text-xs">Physician</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">Yesterday</span>
+                        <span class="w-2 h-2 bg-amber-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Meeting booked</strong> — Dr. Raj Patel (Cardiology, Akron) — May 22, 2:00 PM via Calendly</span>
+                        <span class="text-slate-600 text-xs">Booked</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">May 16</span>
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Positive reply</strong> — Jason Rivera (DDS, Twinsburg) — "Yes, I'd like to learn more"</span>
+                        <span class="text-slate-600 text-xs">Dentist</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">May 16</span>
+                        <span class="w-2 h-2 bg-amber-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Meeting booked</strong> — Jason Rivera (DDS, Twinsburg) — May 23, 10:30 AM via Calendly</span>
+                        <span class="text-slate-600 text-xs">Booked</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">May 15</span>
+                        <span class="w-2 h-2 bg-red-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Unsubscribed</strong> — Thomas Wright (Attorney, Akron) — removed from sequence</span>
+                        <span class="text-slate-600 text-xs">Attorney</span>
+                    </div>
+
+                    <div class="activity-row px-5 py-4 flex items-center gap-4">
+                        <span class="text-slate-500 text-xs w-20 flex-shrink-0">May 14</span>
+                        <span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>
+                        <span class="text-slate-300 flex-1"><strong class="text-white">Sequence completed</strong> — Dr. Linda Park (Internal Med, Cuyahoga Falls) — 5/5 emails sent, no reply</span>
+                        <span class="text-slate-600 text-xs">Physician</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto my-8"></div>
+
+    <!-- Email Performance -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider mb-6">Email Performance by Vertical</p>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <h3 class="font-semibold text-white mb-4">Dentists</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Emails sent</span>
+                            <span class="text-white font-medium">68</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Open rate</span>
+                            <span class="text-white font-medium">65%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Reply rate</span>
+                            <span class="text-emerald-400 font-medium">4.4%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Meetings booked</span>
+                            <span class="text-amber-400 font-medium">3</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/40">
+                        <p class="text-slate-500 text-xs uppercase tracking-wider mb-3">Who booked</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Jason Rivera, DDS — Twinsburg Dental Group</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Dr. Anita Patel — Hudson Family Dental</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Michael Torres, DDS — Medina Oral Surgery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <h3 class="font-semibold text-white mb-4">Physicians</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Emails sent</span>
+                            <span class="text-white font-medium">62</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Open rate</span>
+                            <span class="text-white font-medium">58%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Reply rate</span>
+                            <span class="text-emerald-400 font-medium">3.2%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Meetings booked</span>
+                            <span class="text-amber-400 font-medium">3</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/40">
+                        <p class="text-slate-500 text-xs uppercase tracking-wider mb-3">Who booked</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Dr. Raj Patel — Akron Cardiology Associates</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Dr. James Whitfield — Stow Orthopedics</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Dr. Priya Sharma — Summit Dermatology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <h3 class="font-semibold text-white mb-4">Attorneys</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Emails sent</span>
+                            <span class="text-white font-medium">26</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Open rate</span>
+                            <span class="text-white font-medium">59%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Reply rate</span>
+                            <span class="text-emerald-400 font-medium">3.8%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Meetings booked</span>
+                            <span class="text-amber-400 font-medium">1</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/40">
+                        <p class="text-slate-500 text-xs uppercase tracking-wider mb-3">Who booked</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                                <span class="text-slate-300 text-xs">Karen Albrecht — Albrecht Estate Law, Hudson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto my-8"></div>
+
+    <!-- Pipeline View -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider mb-6">Your Prospect Pipeline</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 text-center">
+                    <p class="text-slate-500 text-xs uppercase mb-2">In Database</p>
+                    <p class="text-2xl font-bold text-slate-300">5,341</p>
+                    <p class="text-slate-600 text-xs mt-1">total prospects</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 text-center">
+                    <p class="text-slate-500 text-xs uppercase mb-2">In Sequence</p>
+                    <p class="text-2xl font-bold text-blue-400">74</p>
+                    <p class="text-slate-600 text-xs mt-1">being emailed now</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 text-center">
+                    <p class="text-slate-500 text-xs uppercase mb-2">Opened</p>
+                    <p class="text-2xl font-bold text-cyan-400">46</p>
+                    <p class="text-slate-600 text-xs mt-1">read at least one email</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 text-center">
+                    <p class="text-slate-500 text-xs uppercase mb-2">Replied</p>
+                    <p class="text-2xl font-bold text-emerald-400">6</p>
+                    <p class="text-slate-600 text-xs mt-1">interested</p>
+                </div>
+                <div class="bg-slate-800/40 border border-emerald-500/30 rounded-xl p-4 text-center glow-green">
+                    <p class="text-emerald-400 text-xs uppercase mb-2">Meetings Booked</p>
+                    <p class="text-2xl font-bold text-emerald-400">7</p>
+                    <p class="text-slate-600 text-xs mt-1">on your calendar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto my-8"></div>
+
+    <!-- Upcoming Meetings -->
+    <section class="py-8 pb-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider mb-6">Upcoming on Your Calendar</p>
+            <div class="space-y-3">
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 flex items-center gap-5">
+                    <div class="text-center flex-shrink-0 w-14">
+                        <p class="text-xs text-slate-500 uppercase">May</p>
+                        <p class="text-2xl font-bold text-white">22</p>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-white font-medium">Dr. Raj Patel — Cardiology Practice Owner</p>
+                        <p class="text-slate-400 text-sm">2:00 PM &bull; Replied: "Yes, I'd be interested in a conversation"</p>
+                    </div>
+                    <span class="text-xs bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full font-medium">Confirmed</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 flex items-center gap-5">
+                    <div class="text-center flex-shrink-0 w-14">
+                        <p class="text-xs text-slate-500 uppercase">May</p>
+                        <p class="text-2xl font-bold text-white">23</p>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-white font-medium">Jason Rivera, DDS — Twinsburg Dental Group</p>
+                        <p class="text-slate-400 text-sm">10:30 AM &bull; Replied: "I'd like to learn more"</p>
+                    </div>
+                    <span class="text-xs bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full font-medium">Confirmed</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 flex items-center gap-5">
+                    <div class="text-center flex-shrink-0 w-14">
+                        <p class="text-xs text-slate-500 uppercase">May</p>
+                        <p class="text-2xl font-bold text-white">28</p>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-white font-medium">Karen Albrecht — Estate Attorney, Hudson</p>
+                        <p class="text-slate-400 text-sm">3:00 PM &bull; Replied: "Could be helpful for my clients"</p>
+                    </div>
+                    <span class="text-xs bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full font-medium">Confirmed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-slate-500 text-sm">Prepared by Simpl ABI | Samuel J. Karman, CEO</p>
+        </div>
+    </footer>
+
+    <!-- Floating Back Button -->
+    <a id="back-to-demo" href="comparison.html" style="position: fixed; bottom: 28px; right: 28px; background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); color: #fff; padding: 14px 24px; border-radius: 50px; font-size: 14px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 20px rgba(59,130,246,0.4); z-index: 9999; display: flex; align-items: center; gap: 8px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 28px rgba(59,130,246,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(59,130,246,0.4)';">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Presentation
+    </a>
+
+</body>
+</html>

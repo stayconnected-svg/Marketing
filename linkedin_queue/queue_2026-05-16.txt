@@ -1,0 +1,168 @@
+======================================================================
+  LINKEDIN DAILY QUEUE — 2026-05-16
+  Intelligent Annuity Solutions | Bryan McInerney
+======================================================================
+
+  Today's targets: 10 new connections
+  Estimated time: 10 minutes
+
+----------------------------------------------------------------------
+  NEW CONNECTION REQUESTS
+----------------------------------------------------------------------
+
+  [1] CRAIG DUHAIME, D.D.S., M.S.D.
+      Dentist, Endodontics | MACEDONIA, OH
+      Phone: 330-908-0404
+      Score: 90/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Craig%20Duhaime%20Macedonia%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Dr. Duhaime, I partner with dental practice owners who've built something substantial and want to protect it from unnecessary taxes and fees. Happy to connect."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [2] SHERIF MORCOS EBIED, BDS, MDS, MSD, PhD
+      Dentist, Orthodontics and Dentofacial Orthopedics | CUYAHOGA FALLS, OH
+      Phone: 330-929-2853
+      Score: 90/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Sherif%20Morcos%20Ebied%20Cuyahoga%20Falls%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Hi Dr. Morcos Ebied — I help long-tenured dentists evaluate options for reducing tax exposure on practice transitions. Would be glad to connect."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [3] RONALD WOLF, DDS, MS
+      Dentist, Endodontics | STOW, OH
+      Phone: 330-686-0080
+      Score: 90/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Ronald%20Wolf%20Stow%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Dr. Wolf, I work specifically with established dental practice owners on tax strategies and exit planning. If you're thinking about the next chapter, I'd welcome connecting."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [4] JASON LAWRENCE, D.D.S., M.S.
+      Dentist, Orthodontics and Dentofacial Orthopedics | HUDSON, OH
+      Phone: 330-342-0930
+      Score: 90/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Jason%20Lawrence%20Hudson%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Dr. Lawrence, I work specifically with established dental practice owners on tax strategies and exit planning. If you're thinking about the next chapter, I'd welcome connecting."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [5] DAVID HARRIS, DDS, MSD
+      Dentist, Endodontics | STOW, OH
+      Phone: 330-688-3800
+      Score: 90/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=David%20Harris%20Stow%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Dr. Harris, I work specifically with established dental practice owners on tax strategies and exit planning. If you're thinking about the next chapter, I'd welcome connecting."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [6] MICHAEL SHER, D.M.D.
+      Dentist, Orthodontics and Dentofacial Orthopedics | BROADVIEW HEIGHTS, OH
+      Phone: 440-546-9333
+      Score: 85/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Michael%20Sher%20Broadview%20Heights%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Dr. Sher — I help dental practice owners in NE Ohio protect more of what they've built through insurance-based financial strategies. Happy to connect here."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [7] PHILIP BOMELI, D.D.S.
+      Dentist, Orthodontics and Dentofacial Orthopedics | SOLON, OH
+      Phone: 440-349-5885
+      Score: 85/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Philip%20Bomeli%20Solon%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Hi Dr. Bomeli, I work with dentists in Solon on tax-efficient strategies for practice owners — especially around succession and retirement planning. Would love to connect."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [8] GLENN GOODRICH, M.S
+      Dentist, Orthodontics and Dentofacial Orthopedics | SOLON, OH
+      Phone: 440-248-4825
+      Score: 85/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Glenn%20Goodrich%20Solon%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Hi Dr. Goodrich, I specialize in working with dentists navigating practice transitions and retirement timing. Always looking to connect with practitioners in Solon."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [9] KEVIN HALLGARTH, D.D.S.
+      Dentist, Orthodontics and Dentofacial Orthopedics | HUDSON, OH
+      Phone: 330-650-1119
+      Score: 85/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Kevin%20Hallgarth%20Hudson%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Hi Dr. Hallgarth, I work with dentists in Hudson on tax-efficient strategies for practice owners — especially around succession and retirement planning. Would love to connect."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+  [10] MARK HAAS, D.D.S.
+      Dentist, Orthodontics and Dentofacial Orthopedics | STOW, OH
+      Phone: 330-688-8667
+      Score: 85/100
+
+      FIND PROFILE:
+      https://www.linkedin.com/search/results/people/?keywords=Mark%20Haas%20Stow%20Ohio
+
+      CONNECTION MESSAGE (copy/paste):
+      "Hi Dr. Haas, I work with dentists in Stow on tax-efficient strategies for practice owners — especially around succession and retirement planning. Would love to connect."
+
+      [ ] Sent  [ ] Not on LinkedIn  [ ] Skip
+
+  ............................................................
+
+
+======================================================================
+  AFTER SENDING:
+  Run: python linkedin_copilot.py --mark-sent 1,2,3,4,5,6,7,8,9,10
+  Or:  python linkedin_copilot.py --mark-sent all
+======================================================================
